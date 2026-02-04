@@ -261,7 +261,7 @@ func (s *LivekitServer) Start() error {
 	if s.config.Region != "" {
 		values = append(values, "region", s.config.Region)
 	}
-	logger.Infow("starting LiveKit server", values...)
+	logger.Infow("starting LiveKit server 1.9.11-patch-simplisafe", values...)
 	if runtime.GOOS == "windows" {
 		logger.Infow("Windows detected, capacity management is unavailable")
 	}
